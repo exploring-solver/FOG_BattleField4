@@ -2,7 +2,7 @@ import { Users, Plus } from 'lucide-react';
 import PlayerList from './PlayerList';
 
 const ServerStats = ({ serverData }) => (
-  <div className="mb-6">
+  <div className="mb-6 w-[80%] ">
     <h2 className="mb-4 text-xl font-semibold">{serverData.name}</h2>
     <div className='flex gap-2 !text-xs text-gray-400 font-semibold'>
       <img src="https://cdn.prod.website-files.com/6022d2c0d37628c87d9e16ab/6022d74ce15ae958f20e10a9_america-flag.svg" alt="" className='w-12'/>
@@ -30,8 +30,8 @@ const ServerStats = ({ serverData }) => (
     </p>
     <div className="flex justify-between items-center mb-4 gap-2 flex-wrap">
       <div className=''>
-        <div className="grid grid-cols-3 gap-4 mb-4">
-          <button className="border-2 border-gray-500 p-2 rounded bg-transparent transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-black font-semibold">JOIN</button>
+        <div className="flex flex-wrap justify-between gap-4 mb-4">
+          <button className="border-2 border-gray-500 p-2 rounded bg-transparent transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-black font-semibold px-6">JOIN</button>
           <button className="border-2 border-gray-500 p-2 rounded bg-transparent transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-black font-semibold">SPECTATE</button>
           <button className="border-2 border-gray-500 p-2 rounded bg-transparent transition-all duration-300 ease-in-out hover:cursor-pointer hover:bg-white hover:text-black font-semibold">JOIN AS COMMANDER</button>
         </div>
